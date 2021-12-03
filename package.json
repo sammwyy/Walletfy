@@ -1,7 +1,9 @@
 {
   "name": "walletfy",
   "version": "0.0.1",
-  "description": "",
+  "description": "Library and wrapper for many blockchains and wallets.",
+  "author": "Sammwy",
+  "license": "ISC",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -15,8 +17,6 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bip32": "^3.0.1",
     "bip39": "^3.0.4",
@@ -44,5 +44,14 @@
   },
   "files": [
     "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sammwyy/Walletfy"
+  },
+  "keywords": [
+    "balance", "cryptocurrency", "wallet",
+    "btc", "eth", "ltc", "xno",
+    "bitcoin", "ethereum", "litecoin", "nano"
   ]
 }
