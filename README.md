@@ -21,8 +21,6 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 | Ripple                | XRP  | ❌ |
 | Stellar               | XLM  | ❌ |
 
-| Tether                | USDT | ❌ |
-
 ## Supported ERC-20 tokens
 |          Name         | Code |  ?  |
 | --------------------- | ---- | --- |
