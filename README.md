@@ -7,16 +7,11 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 - [ ] Make transfers.
 - [ ] Detect transfers in real time.
 
-## Supported coins and tokens
+## Supported coins
 |          Name         | Code |  ?  |
 | --------------------- | ---- | --- |
-| Axie Infinity         | AXS  | ❌ |
-| Basic Attention Token | BAT  | ❌ |
 | Bitcoin               | BTC  | ✔️ |
 | Cardano               | ADA  | ❌ |
-| Chainlink             | LINK | ❌ |
-| DAI                   | DAI  | ❌ |
-| Decentraland          | MANA | ❌ |
 | Dogecoin              | DOGE | ❌ |
 | Ethereum              | ETH  | ✔️ |
 | Litecoin              | LTC  | ✔️ |
@@ -24,7 +19,18 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 | Nano                  | XNO  | ✔️ |
 | Polkadot              | DOT  | ❌ |
 | Ripple                | XRP  | ❌ |
-| Shiba Inu             | SHIB | ❌ |
 | Stellar               | XLM  | ❌ |
+
 | Tether                | USDT | ❌ |
 
+## Supported ERC-20 tokens
+|          Name         | Code |  ?  |
+| --------------------- | ---- | --- |
+| Axie Infinity         | AXS  | ❌ |
+| Basic Attention Token | BAT  | ❌ |
+| Chainlink             | LINK | ❌ |
+| DAI                   | DAI  | ❌ |
+| Decentraland          | MANA | ❌ |
+| Ripple                | XRP  | ❌ |
+| Shiba Inu             | SHIB | ❌ |
+| Tether                | USDT | ❌ |
