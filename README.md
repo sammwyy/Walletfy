@@ -30,5 +30,5 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 | DAI                   | DAI  | ❌ |
 | Decentraland          | MANA | ❌ |
 | Ripple                | XRP  | ❌ |
-| Shiba Inu             | SHIB | ❌ |
+| Shiba Inu             | SHIB | ✔️ |
 | Tether                | USDT | ❌ |
