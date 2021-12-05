@@ -48,7 +48,7 @@ export default class LiteCoin implements ICoin {
     const mnemonic = generateMnemonic();
     const seed = await mnemonicToSeed(mnemonic);
     const root = this.bip32.fromSeed(seed, this.network);
-    const account = root.derivePath("m/44'/0'/0'/0");
+    const account = root.derivePath("m/44'/2'/0'/0");
     const node = account.derive(0).derive(0);
 
     const ltcAddress = payments.p2pkh({
