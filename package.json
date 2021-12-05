@@ -13,6 +13,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@polkadot/api": "^6.10.3",
+    "@polkadot/keyring": "^8.1.2",
+    "@polkadot/ui-keyring": "^0.87.5",
+    "@polkadot/util-crypto": "^8.1.2",
     "bip32": "^3.0.1",
     "bip39": "^3.0.4",
     "bitcoinjs-lib": "^6.0.1",
@@ -45,8 +49,16 @@
     "url": "https://github.com/sammwyy/Walletfy"
   },
   "keywords": [
-    "balance", "cryptocurrency", "wallet",
-    "btc", "eth", "ltc", "xno",
-    "bitcoin", "ethereum", "litecoin", "nano"
+    "balance",
+    "cryptocurrency",
+    "wallet",
+    "btc",
+    "eth",
+    "ltc",
+    "xno",
+    "bitcoin",
+    "ethereum",
+    "litecoin",
+    "nano"
   ]
 }

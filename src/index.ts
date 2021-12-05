@@ -5,6 +5,7 @@ import Bitcoin from './coins/bitcoin';
 import Ethereum from './coins/ethereum';
 import LiteCoin from './coins/litecoin';
 import Nano from './coins/nano';
+import Polkadot from './coins/polkadot';
 
 export default class Walletfy {
   private coins: ICoin[];
@@ -16,6 +17,7 @@ export default class Walletfy {
     this.coins.push(new Ethereum());
     this.coins.push(new LiteCoin());
     this.coins.push(new Nano());
+    this.coins.push(new Polkadot());
   }
 
   getCoin(name: string): ICoin | null {
