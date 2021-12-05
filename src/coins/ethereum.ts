@@ -16,7 +16,7 @@ export default class Ethereum implements ICoin {
   async getBalance(address: string): Promise<number> {
     const req = await fetch('https://api.ethplorer.io/getAddressInfo/' + address + '?apiKey=freekey');
     const data = await req.json();
-    const balance = data.ETH?.balance || -1;
+    const balance = data.ETH?.balance ?? -1;
     return balance;
   }
 
