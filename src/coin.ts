@@ -4,6 +4,6 @@ export default interface ICoin {
   getCode: () => string;
   getName: () => string;
 
-  generateWallet: () => Promise<IWallet>;
+  generateWallet: (args?: any) => Promise<IWallet>;
   getBalance: (address: string) => Promise<number>;
 }

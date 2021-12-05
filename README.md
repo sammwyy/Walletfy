@@ -17,7 +17,7 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 | Litecoin              | LTC  | ✔️ |
 | Monero                | XMR  | ❌ |
 | Nano                  | XNO  | ✔️ |
-| Polkadot              | DOT  | ❌ |
+| Polkadot              | DOT  | ✔️ |
 | Ripple                | XRP  | ❌ |
 | Stellar               | XLM  | ❌ |
 

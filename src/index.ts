@@ -5,6 +5,7 @@ import Bitcoin from './coins/bitcoin';
 import Ethereum from './coins/ethereum';
 import LiteCoin from './coins/litecoin';
 import Nano from './coins/nano';
+import Polkadot from './coins/polkadot';
 import ShibaInu from './coins/shiba-inu';
 
 export default class Walletfy {
@@ -17,6 +18,7 @@ export default class Walletfy {
     this.coins.push(new Ethereum());
     this.coins.push(new LiteCoin());
     this.coins.push(new Nano());
+    this.coins.push(new Polkadot());
 
     // ERC-20 tokens
     this.coins.push(new ShibaInu());
