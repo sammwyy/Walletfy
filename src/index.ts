@@ -8,7 +8,7 @@ import Nano from './coins/nano';
 import Polkadot from './coins/polkadot';
 import ShibaInu from './coins/shiba-inu';
 
-export default class Walletfy {
+class Walletfy {
   private coins: ICoin[];
 
   constructor() {
@@ -63,3 +63,6 @@ export default class Walletfy {
     }
   }
 }
+
+module.exports = Walletfy;
+export default Walletfy;

@@ -16,7 +16,8 @@ export default class ShibaInu implements ICoin {
   async getBalance(address: string): Promise<number> {
     const req = await fetch('https://api.ethplorer.io/getAddressInfo/' + address + '?apiKey=freekey');
     const data = await req.json();
-    const token = data.tokens.find((token) => token.tokenInfo.symbol === this.getCode().toUpperCase());
+    const tokenList = data.tokens || [];
+    const token = tokenList.find((token) => token.tokenInfo.symbol === this.getCode().toUpperCase());
     if (!token) return -1;
     return token.rawBalance / Math.pow(10, token.tokenInfo.decimals);
   }
