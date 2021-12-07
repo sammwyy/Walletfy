@@ -4,13 +4,13 @@ import Ethplorer from '../utils/ethplorer';
 import ICoin from '../coin';
 import IWallet from '../wallet';
 
-export default class ShibaInu extends Ethplorer implements ICoin {
+export default class Dai extends Ethplorer implements ICoin {
   getCode() {
-    return 'shib';
+    return 'dai';
   }
 
   getName() {
-    return 'shiba-inu';
+    return 'dai';
   }
 
   async getBalance(address: string): Promise<number> {
