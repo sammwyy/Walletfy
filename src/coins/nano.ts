@@ -1,5 +1,5 @@
 import { wallet } from 'nanocurrency-web';
-import fetch from 'node-fetch';
+import axios from 'axios';
 import ICoin from '../coin';
 import IWallet from '../wallet';
 
@@ -13,8 +13,8 @@ export default class Nano implements ICoin {
   }
 
   async getBalance(address: string): Promise<any> {
-    const req = await fetch('https://api.nano.to/account/' + address);
-    const data = await req.json();
+    const { data } = await axios('https://api.nano.to/account/' + address);
+
     if (data.error || !data.balance) {
       return -1;
     }

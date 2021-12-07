@@ -1,7 +1,7 @@
 import { BIP32API, BIP32Factory } from 'bip32';
 import { generateMnemonic, mnemonicToSeed } from 'bip39';
 import { Network, networks, payments } from 'bitcoinjs-lib';
-import fetch from 'node-fetch';
+import axios from 'axios';
 import * as ecc from 'tiny-secp256k1';
 
 import ICoin from '../coin';
@@ -25,8 +25,7 @@ export default class Bitcoin implements ICoin {
   }
 
   async getBalance(address: string): Promise<number> {
-    const req = await fetch('https://blockchain.info/q/addressbalance/' + address + '?confirmations=3');
-    const data = await req.text();
+    const { data } = await axios('https://blockchain.info/q/addressbalance/' + address + '?confirmations=3');
     if (data.includes('error')) {
       return -1;
     }

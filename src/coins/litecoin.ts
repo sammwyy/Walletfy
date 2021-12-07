@@ -1,7 +1,7 @@
 import { BIP32API, BIP32Factory } from 'bip32';
 import { generateMnemonic, mnemonicToSeed } from 'bip39';
 import { Network, payments } from 'bitcoinjs-lib';
-import fetch from 'node-fetch';
+import axios from 'axios';
 import * as ecc from 'tiny-secp256k1';
 
 import ICoin from '../coin';
@@ -35,8 +35,8 @@ export default class LiteCoin implements ICoin {
   }
 
   async getBalance(address: string): Promise<number> {
-    const req = await fetch('https://api.blockcypher.com/v1/ltc/main/addrs/' + address + '/balance');
-    const data = await req.json();
+    const { data } = await axios('https://api.blockcypher.com/v1/ltc/main/addrs/' + address + '/balance');
+
     if (data.balance) {
       return data.balance / 100000000;
     } else {

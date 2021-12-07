@@ -7,6 +7,12 @@ import LiteCoin from './coins/litecoin';
 import Nano from './coins/nano';
 import Polkadot from './coins/polkadot';
 import ShibaInu from './coins/shiba-inu';
+import AxieInfinity from './coins/axie-infinity';
+import BasicAttentionToken from './coins/basic-attention-token';
+import Chainlink from './coins/chainlink';
+import Dai from './coins/dai';
+import Decentraland from './coins/decentraland';
+import Tether from './coins/tether';
 
 class Walletfy {
   private coins: ICoin[];
@@ -21,6 +27,12 @@ class Walletfy {
     this.coins.push(new Polkadot());
 
     // ERC-20 tokens
+    this.coins.push(new AxieInfinity());
+    this.coins.push(new BasicAttentionToken());
+    this.coins.push(new Chainlink());
+    this.coins.push(new Dai());
+    this.coins.push(new Decentraland());
+    this.coins.push(new Tether());
     this.coins.push(new ShibaInu());
   }
   
