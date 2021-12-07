@@ -23,6 +23,15 @@ export default class Walletfy {
     // ERC-20 tokens
     this.coins.push(new ShibaInu());
   }
+  
+  get availableCoins() {
+    return this.coins.map((coin) => {
+      return {
+        code: coin.getCode(),
+        name: coin.getName(),
+      };
+    });
+  }
 
   getCoin(name: string): ICoin | null {
     const lowerName = name.toLowerCase();
