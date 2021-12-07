@@ -1,5 +1,5 @@
 import { Wallet as EthWallet } from 'ethers';
-import fetch from 'node-fetch';
+import axios from 'axios';
 
 import ICoin from '../coin';
 import IWallet from '../wallet';
@@ -14,8 +14,7 @@ export default class Ethereum implements ICoin {
   }
 
   async getBalance(address: string): Promise<number> {
-    const req = await fetch('https://api.ethplorer.io/getAddressInfo/' + address + '?apiKey=freekey');
-    const data = await req.json();
+    const { data } = await axios('https://api.ethplorer.io/getAddressInfo/' + address + '?apiKey=freekey');
     const balance = data.ETH?.balance ?? -1;
     return balance;
   }

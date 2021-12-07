@@ -24,11 +24,11 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 ## Supported ERC-20 tokens
 |          Name         | Code |  ?  |
 | --------------------- | ---- | --- |
-| Axie Infinity         | AXS  | ❌ |
-| Basic Attention Token | BAT  | ❌ |
-| Chainlink             | LINK | ❌ |
-| DAI                   | DAI  | ❌ |
-| Decentraland          | MANA | ❌ |
+| Axie Infinity         | AXS  | ✔️ |
+| Basic Attention Token | BAT  | ✔️ |
+| Chainlink             | LINK | ✔️ |
+| DAI                   | DAI  | ✔️ |
+| Decentraland          | MANA | ✔️ |
 | Ripple                | XRP  | ❌ |
 | Shiba Inu             | SHIB | ✔️ |
-| Tether                | USDT | ❌ |
+| Tether                | USDT | ✔️ |
