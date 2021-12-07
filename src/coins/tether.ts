@@ -4,18 +4,17 @@ import Ethplorer from '../utils/ethplorer';
 import ICoin from '../coin';
 import IWallet from '../wallet';
 
-export default class ShibaInu extends Ethplorer implements ICoin {
+export default class Tether extends Ethplorer implements ICoin {
   getCode() {
-    return 'shib';
+    return 'usdt';
   }
 
   getName() {
-    return 'shiba-inu';
+    return 'tether';
   }
 
   async getBalance(address: string): Promise<number> {
     const token = await this.getTokenInfo(address, this.getCode());
-    console.log(token);
     if (!token) return -1;
     return token.balance / Math.pow(10, token.decimals);
   }
