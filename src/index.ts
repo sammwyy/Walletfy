@@ -6,6 +6,8 @@ import Ethereum from './coins/ethereum';
 import LiteCoin from './coins/litecoin';
 import Nano from './coins/nano';
 import Polkadot from './coins/polkadot';
+import Sumcoin from './coins/sumcoin';
+
 import ShibaInu from './coins/shiba-inu';
 import AxieInfinity from './coins/axie-infinity';
 import BasicAttentionToken from './coins/basic-attention-token';
@@ -20,11 +22,13 @@ class Walletfy {
   constructor() {
     this.coins = [];
 
+    // Coins
     this.coins.push(new Bitcoin());
     this.coins.push(new Ethereum());
     this.coins.push(new LiteCoin());
     this.coins.push(new Nano());
     this.coins.push(new Polkadot());
+    this.coins.push(new Sumcoin());
 
     // ERC-20 tokens
     this.coins.push(new AxieInfinity());

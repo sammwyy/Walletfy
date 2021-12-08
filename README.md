@@ -20,6 +20,7 @@ Library and wrapper for the creation and consultation of blockchains and wallets
 | Polkadot              | DOT  | ✔️ |
 | Ripple                | XRP  | ❌ |
 | Stellar               | XLM  | ❌ |
+| Sumcoin               | SUM  | ✔️ |
 
 ## Supported ERC-20 tokens
 |          Name         | Code |  ?  |
