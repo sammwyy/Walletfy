@@ -1,4 +1,6 @@
 import axios from 'axios';
+import { Wallet as EthWallet } from 'ethers';
+import IWallet from '../wallet';
 
 interface TokenInfo {
   name: string;
@@ -23,5 +25,19 @@ export default class Ethplorer {
     } catch (_) {
       return null;
     }
+  }
+
+  async generateWallet(): Promise<IWallet> {
+    const wallet = EthWallet.createRandom();
+    return {
+      coin: this.getCode(),
+      key: wallet.privateKey,
+      address: wallet.address,
+      mnemonic: wallet.mnemonic.phrase,
+    };
+  }
+
+  getCode(): string {
+    throw new Error('Method not implemented.');
   }
 }
