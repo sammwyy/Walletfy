@@ -34,10 +34,12 @@
     "cardano-wallet-js": "^1.2.3",
     "ethers": "^5.5.2",
     "nanocurrency-web": "^1.3.5",
+    "node-fetch": "^2.6.1",
     "tiny-secp256k1": "^2.1.2"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
+    "@types/node-fetch": "^3.0.2",
     "jest": "^27.4.3",
     "prettier": "^2.5.0",
     "rimraf": "^3.0.2",
